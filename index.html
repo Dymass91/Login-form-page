@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Stylizowanie formularzy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Nauka podstawowego stylizowania elementów formularzy" />
     <meta name="keywords" content="css, odcinek" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -17,26 +20,25 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Prices</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="active" href="#">Sign in</a></li>
+        </ul>
+    </nav>
     <!-- Full Width Responsive Image Slider -->
     <div class="cycle-slideshow">
         <img src="img/snowboard 2.jpg">
         <img src="img/snowboard 3.jpeg">
     </div>
     <!-- End Full Width Responsive Image Slider -->
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a class="active" href="#">Log in</a></li>
-        </ul>
-    </nav>
-
 
     <fieldset>
         <legend> MyBoard.com </legend>
 
-        <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+        <p class="hint-text">Create your account. It's for free and it take only couple seconds.</p>
 
         <form>
             <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"
@@ -62,6 +64,7 @@
 
         </form>
     </fieldset>
+
 </body>
 
 </html>

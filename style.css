@@ -1,18 +1,264 @@
-body
-{  
-    font-size: 0.795em;
+
+@media (max-width: 768px) 
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+{ 
+    font-size: 12px;
     font-family: 'Russo One', sans-serif;
     background-color: rgb(214, 214, 214);
 }
 .cycle-slideshow
 {
-    margin: -8px;
+    position: fixed;
+    z-index: -1;
+}
+img {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: contain;
+}
+legend
+{
+    margin-left: 40px;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 4px 1px 5px #4b4b4b;
+}
+legend::before
+{
+    border-radius:50%;
+    border: rgb(165, 165, 165) solid 5px;
+    background-color: #fff;
+    line-height: 44px;
+    height: 64px;
+    width: 64px;
+    top: -20px;
+    left: -75px;
+    position: absolute;
+    content: url(img/snowboard.png);
+    display: flex;
+    justify-content: center;
+}
+
+fieldset
+{
+    z-index: 12;
+    border: rgb(161, 161, 161) solid 5px;
+    border-radius: 10px;
+    background-color: rgba(170, 197, 248, 0.603);
+    width: 50vw;
+    padding: 12px 60px 35px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
+
+}
+.hint-text
+{
+    color: rgb(90, 90, 90);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+input[type=checkbox]
+{
+    
+    line-height: 16px;
+    width: 16px;
+    margin-top: 5%;
+    color: rgb(153, 153, 153);
+}
+
+label a
+{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+a:hover{
+    text-decoration: underline;
+}
+.checkbox-inline
+{   
+    margin-top: 5%;
+    color: rgb(85, 85, 85);
+}
+input[type=text],
+input[type=password]
+{
+    margin-left: 50%;
+    transform: translateX(-50%);
+	width: 130%;
+	background-color: #efefef;
+	color: rgb(115, 192, 255);
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 12px;
+	padding: 7px;
+	box-sizing: border-box;
+	outline: none;
+    margin-top: 5%;
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #8aa3da;
+	background-color: #e9f3e9;
+	color: #19a3ff;
+}
+input[type=email]
+{
+    margin-left: 50%;
+    transform: translateX(-50%);
+	width: 130%;
+	background-color: #efefef;
+    color: rgb(115, 192, 255);
+	border: 2px solid #ddd;
+	border-radius: 5px;
+    font-size: 12px;
+	padding: 7px;
+	box-sizing: border-box;
+	outline: none;
+    margin-top: 5%;
+}
+input[type=email]:focus
+{
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #8aa3da;
+	background-color: #e9f3e9;
+	color: #19a3ff;
+}
+input[type=submit]
+{
+    transition:  ease-in-out 0.3s;
+    background: rgba(0, 162, 255, 0.61);
+    border: 2px solid rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+    border-radius: 18px;
+    font-size:20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: none;
+  
+}
+
+input[type=submit]:focus
+{
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+    transition:  ease-in-out 0.5s;
+    background: rgb(0, 152, 253);
+    -webkit-transition:  ease-in-out 0.5s;
+    -moz-transition:  ease-in-out 0.5s;
+    -ms-transition:  ease-in-out 0.5s;
+    -o-transition:  ease-in-out 0.5s;
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: rgb(66, 107, 140);
+}
+
+nav
+{
+    display: flex;
+    background-color: #151a2c2d;
+    flex-basis: 100%;
+    line-height: 60px;
+  justify-content:center;
+    font-size: 11px;
+}
+
+nav ul 
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+nav ul li 
+{
+    list-style: none;
+}
+
+nav ul li a
+{
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav.black ul li a 
+{
+    color: #fff;
+}
+
+nav ul li a:focus 
+{
+    outline: none;
+}
+
+nav ul li a.active
+{
+    transition:ease-in-out 0.3s;
+    background: rgba(0, 162, 255, 0.26);
+    border: 2px solid rgb(112, 112, 112);
+    color: #fff;
+    border-radius: 18px;
+}
+nav ul li a.active:hover
+{
+    transition:ease-in-out 0.3s;
+    background: rgb(0, 152, 253);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 18px;
+}
+}
+@media(min-width:769px)
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body
+{  
+    font-size: 16px;
+    font-family: 'Russo One', sans-serif;
+    background-color: rgb(214, 214, 214);
+}
+.cycle-slideshow
+{
     position: fixed;
     z-index: -1;
 }
 img
 {
-    margin-top: 8px;
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -45,22 +291,18 @@ legend::before
 }
 fieldset
 {
-    z-index: 12;
+    border-radius: 22px;
+    z-index: 2;
     border: rgb(161, 161, 161) solid 5px;
-    border-radius: 10px;
     background-color: rgba(170, 197, 248, 0.603);
-    width: 26%;
-    padding: 12px 60px 35px 60px;
+    width: 36vw;
+    padding: 12px 60px 60px 60px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     -webkit-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
     -moz-box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
     box-shadow: 3px 3px 30px 5px rgba(204,204,204,0.9);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 .hint-text
 {
@@ -71,8 +313,8 @@ fieldset
 input[type=checkbox]
 {
     
-    height: 0.90em;
-    width: 0.90em;
+    line-height: 18px;
+    width:  18px;
     vertical-align: text-bottom;
     margin-top: 20px;
     color: rgb(153, 153, 153);
@@ -88,7 +330,7 @@ a:hover{
 }
 .checkbox-inline
 {   
-    margin-top: 18px;
+    margin-top: 5%;
     color: rgb(85, 85, 85);
 }
 input[type=text],
@@ -144,13 +386,14 @@ input[type=submit]
     
     transition:  ease-in-out 0.3s;
     width: 75%;
-    background-color: #4cfa35;
+    background: rgba(0, 162, 255, 0.61);
+    border: 2px solid rgb(112, 112, 112);
+    color: rgb(255, 255, 255);
+    border-radius: 18px;
     font-size:20px;
-    color: white;
+    font-weight: bold;
     padding: 15px 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
+    margin-top: 8%;
     cursor: pointer;
     letter-spacing: 2px;
     outline: none;
@@ -170,7 +413,7 @@ input[type=submit]:focus
 input[type=submit]:hover
 {
     transition:  ease-in-out 0.5s;
-    background-color: #1eff00;
+    background: rgb(0, 152, 253);
     -webkit-transition:  ease-in-out 0.5s;
     -moz-transition:  ease-in-out 0.5s;
     -ms-transition:  ease-in-out 0.5s;
@@ -188,13 +431,11 @@ input:focus::-webkit-input-placeholder
 
 nav
 {
-    background-color: rgba(7, 7, 7, 0.178);
-    margin: -8px;
+    display: flex;
+    background-color: #151a2c2d;
     width: 100%;
-    height: 40px;
-    padding-left: 16px;
-    padding-bottom: 12px;
-    padding-top: 10px;
+    line-height: 60px;
+  justify-content: flex-end;
 }
 
 nav ul 
@@ -231,15 +472,17 @@ nav ul li a:focus
 nav ul li a.active
 {
     transition:ease-in-out 0.3s;
-    background: #56fc40;
+    background: rgba(0, 162, 255, 0.26);
+    border: 2px solid rgb(112, 112, 112);
     color: #fff;
-    border-radius: 6px;
+    border-radius: 18px;
 }
 nav ul li a.active:hover
 {
+    text-decoration: none;
     transition:ease-in-out 0.3s;
-    background: #00fc00;
+    background: rgb(0, 152, 253);
     color: #fff;
-    border-radius: 6px;
 }
 
+}

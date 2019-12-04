@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
-    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="jquery.cycle2.min.js"></script>
 
 </head>
 
 <body>
+
     <nav>
         <ul>
             <li><a href="#">Service</a></li>
@@ -28,13 +27,10 @@
             <li><a class="active" href="#">Sign in</a></li>
         </ul>
     </nav>
-    <!-- Full Width Responsive Image Slider -->
-    <div class="cycle-slideshow">
-        <img src="img/snowboard 2.jpg">
-        <img src="img/snowboard 3.jpeg">
+    <div id="slider" class="cycle-slideshow">
+        <img class="slideshow-image" src="img/snowboard0.jpg">
+        <img class="slideshow-image" src="img/snowboard1.jpeg">
     </div>
-    <!-- End Full Width Responsive Image Slider -->
-
     <fieldset>
         <legend> MyBoard.com </legend>
 
@@ -64,6 +60,8 @@
 
         </form>
     </fieldset>
+
+    <script src="JavaScript.js"></script>
 
 </body>
 

@@ -259,6 +259,7 @@ body
 }
 img
 {
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -486,3 +487,9 @@ nav ul li a.active:hover
 }
 
 }
+img {
+    position: absolute;
+    transition: opacity .5s ease-in;
+  }
+  
+  img + img { opacity: 0; }

@@ -21,9 +21,9 @@
 
     <nav class="navbar">
         <ul>
-            <li>Service</li>
-            <li>Prices</li>
-            <li>Contact</li>
+            <li href="">Service</li>
+            <li href="">Prices</li>
+            <li href="">Contact</li>
         </ul>
         <button class="btn btn-primary">Sign in</button>
         <button class="navbar-toggler">
@@ -34,37 +34,50 @@
         <img class="slideshow-image" src="img/snowboard0.jpg">
         <img class="slideshow-image" src="img/snowboard1.jpeg">
     </div>
-    <fieldset class="Login-form">
+    <!--<fieldset class="Login-form">
         <legend> MyBoard.com </legend>
 
         <p class="hint-text">Create your account. It's for free and it take only couple seconds.</p>
 
-        <form>
-            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"
-                onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+        <form id="form" action="/" method="post" onsubmit="return ValidateForm()">
+            <input type="text" name="first_name" placeholder="First Name" onfocus="placeholder=''"
+                onblur="placeholder='First Name'" id="name">
 
-            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"
-                onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+            <p class="error"></p>
 
-            <input type="email" class="form-control" name="email" placeholder="Email" required="required"
-                onfocus="this.placeholder=''" onblur="this.placeholder='Email'">
+            <input type="text" name="last_name" placeholder="Last Name" onfocus="placeholder=''"
+                onblur="placeholder='Last Name'">
 
-            <input type="password" placeholder="Password" onfocus="this.placeholder=''"
-                onblur="this.placeholder='Password'">
+            <p class="error"></p>
 
-            <input type="password" placeholder="Confirm Password" onfocus="this.placeholder=''"
-                onblur="this.placeholder='Confirm Password'">
+            <input type="email" name="email" placeholder="Email" onfocus="placeholder=''" onblur="placeholder='Email'">
 
-            <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of
+            <p class="error"></p>
+
+            <input type="password" placeholder="Password" onfocus="placeholder=''" onblur="placeholder='Password'"
+                id="password">
+
+            <p class="error"></p>
+
+            <input type="password" placeholder="Confirm Password" onfocus="placeholder=''"
+                onblur="placeholder='Confirm Password'" id="confirm_password">
+
+            <p class="error"></p>
+
+            <label class="checkbox-inline"><input type="checkbox"> I accept the <a href="#">Terms of
                     Use</a>
                 &amp; <a href="#">Privacy Policy</a></label>
 
-            <input type="submit" value="Register Now">
+            <button type="submit">Register Now</button>
 
         </form>
-    </fieldset>
+    </fieldset>-->
+
+
+
 
     <script src="JavaScript.js"></script>
+    <script src="Validate.js"></script>
 
 </body>
 

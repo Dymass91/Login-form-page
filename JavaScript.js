@@ -1,10 +1,10 @@
 const image = document.querySelector('slideshow-image');
 
-var current = 0,
+let current = 0,
     slides = document.getElementsByTagName("img");
 
-setInterval(function () {
-    for (var i = 0; i < slides.length; i++) {
+setInterval(() => {
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.opacity = 0;
     }
     current = (current != slides.length - 1) ? current + 1 : 0;
@@ -43,28 +43,6 @@ function navbarLinkClick(event) {
 
 }
 
-// Smooth-Scrolling
-
-// APPROACH #1 - window.scrollTo() (window.scroll())
-// function smoothScroll(event) {
-//   event.preventDefault();
-//   const targetId = event.currentTarget.getAttribute("href");
-//   window.scrollTo({
-//     top: targetId==="#" ? 0 : document.querySelector(targetId).offsetTop,
-//     behavior: "smooth"
-//   });
-// }
-
-// APPROACH #2 - element.scrollIntoView()
-// function smoothScroll(event) {
-//   event.preventDefault();
-//   const targetId = event.currentTarget.getAttribute("href")==="#" ? "header" : event.currentTarget.getAttribute("href");
-//   document.querySelector(targetId).scrollIntoView({
-//     behavior: "smooth",
-//     block: "start"
-//   });
-// }
-
 // APPROACH #3 - window.requestAnimationFrame()
 function smoothScroll(event) {
     event.preventDefault();
@@ -80,7 +58,7 @@ function smoothScroll(event) {
     function step(timestamp) {
         if (!start) start = timestamp;
         const progress = timestamp - start;
-        // window.scrollTo(0, distance*(progress/duration) + startPosition);
+
         window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
         if (progress < duration) window.requestAnimationFrame(step);
     }

@@ -37,7 +37,7 @@ form.addEventListener('submit', function (event) {
             text.className = 'white-text';
             text.appendChild(
                 document.createTextNode(
-                    `Sign up successful, welcom to SocialApe ${name}`
+                    `Sign up successful, welcom to MyBoard.com ${name}`
                 )
             );
             panel.appendChild(text);

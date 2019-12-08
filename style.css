@@ -14,7 +14,11 @@
     font-family: 'Russo One', sans-serif;
     background-color: rgb(214, 214, 214);
 }
-
+.cycle-slideshow
+{
+  position: fixed;
+  z-index: -1;
+}
 legend
 {
     margin-left: 40px;
@@ -135,7 +139,10 @@ input[type=email]:focus
     outline: none;
   
 }
-
+.btn-nav
+{
+  display: none;
+}
 
 
 input::-webkit-input-placeholder
@@ -317,6 +324,11 @@ input:focus::-webkit-input-placeholder
 }
 
 }
+.cycle-slideshow
+{
+  position: fixed;
+  z-index: -1;
+}
 img {
     position: absolute;
     transition: opacity .5s ease-in;
@@ -324,7 +336,16 @@ img {
   
   img + img { opacity: 0; }
 
-
+  .card-panel 
+  {
+    margin-left: 50%;
+    transform: translatex(-50%);
+    text-align: center;
+    color: #fff;
+    top: 80px;
+    position: absolute;
+  }
+  
   /* navbar */
 .btn-nav
 {
@@ -366,7 +387,7 @@ img {
   }
   .navbar a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(104, 104, 104);
   }
   .navbar ul li:hover {
     text-decoration: underline;
@@ -434,10 +455,13 @@ img {
     }
     .navbar ul.open {
       max-height: 100vh;
+      margin-top: 60px;
     }
     .navbar ul li {
       width: 100%;
-      /* border-bottom: 1px solid rgba(255,255,255,0.3); */
+      color: rgb(77, 77, 77);
+      background-color: rgba(100, 148, 237, 0.507);
+       border-bottom: 1px solid rgba(255,255,255,0.3); 
     }
     .navbar ul li a {
       padding: 0;

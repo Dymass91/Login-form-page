@@ -14,12 +14,6 @@
     font-family: 'Russo One', sans-serif;
     background-color: rgb(214, 214, 214);
 }
-.cycle-slideshow
-{
-   position: fixed;
-  
-    z-index: -1;
-}
 
 legend
 {
@@ -69,28 +63,13 @@ legend::before
     margin-bottom: 15px;
     text-align: center;
 }
-input[type=checkbox]
-{
-    
-    line-height: 16px;
-    width: 16px;
-    margin-top: 5%;
-    color: rgb(153, 153, 153);
-}
 
-label a
-{
-    text-decoration: none;
-    color: rgb(49, 49, 49);
-}
+
+
 a:hover{
     text-decoration: underline;
 }
-.checkbox-inline
-{   
-    margin-top: 5%;
-    color: rgb(85, 85, 85);
-}
+
 input[type=text],
 input[type=password]
 {
@@ -140,7 +119,7 @@ input[type=email]:focus
 	background-color: #e9f3e9;
 	color: #19a3ff;
 }
-input[type=submit]
+.btn-register
 {
     transition:  ease-in-out 0.3s;
     background: rgba(0, 162, 255, 0.61);
@@ -157,20 +136,7 @@ input[type=submit]
   
 }
 
-input[type=submit]:focus
-{
-	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
-}
 
-input[type=submit]:hover
-{
-    transition:  ease-in-out 0.5s;
-    background: rgb(0, 152, 253);
-    -webkit-transition:  ease-in-out 0.5s;
-    -moz-transition:  ease-in-out 0.5s;
-    -ms-transition:  ease-in-out 0.5s;
-    -o-transition:  ease-in-out 0.5s;
-}
 
 input::-webkit-input-placeholder
 {
@@ -197,11 +163,7 @@ body
     font-family: 'Russo One', sans-serif;
     background-color: rgb(214, 214, 214);
 }
-.cycle-slideshow
-{
-    position: fixed;
-    z-index: -1;
-}
+
 img
 {
     position: absolute;
@@ -255,31 +217,25 @@ legend::before
 {
     color: rgb(90, 90, 90);
     margin-bottom: 15px;
-    margin-top: 20px;
-    text-align: center;
-}
-input[type=checkbox]
-{
-    
-   height: 18px;
-    width:  18px;
-    vertical-align: text-bottom;
     margin-top: 30px;
-    color: rgb(153, 153, 153);
-}
-
-label a
-{
-    text-decoration: none;
-    color: rgb(49, 49, 49);
-}
-a:hover{
-    text-decoration: underline;
+    text-align: center;
 }
 .checkbox-inline
 {   
+  position: relative;
     color: rgb(85, 85, 85);
+    height: 18px;
+    width:  18px;
+    vertical-align: text-bottom;
+    margin-top: 30px;
+    
 }
+
+
+a:hover{
+    text-decoration: underline;
+}
+
 input[type=text],
 input[type=password]
 {
@@ -327,7 +283,7 @@ input[type=email]:focus
 	background-color: #e9f3e9;
 	color: #b6b6b6;	
 }
-button[type=submit]
+.btn-register
 {
     margin-left: 12.5%;
     
@@ -350,16 +306,6 @@ button[type=submit]
     -o-transition:  ease-in-out 0.3s;
 }
 
-button[type=submit]:hover
-{
-  color: rgb(255, 255, 255);
-    transition:  ease-in-out 0.5s;
-    background: rgb(0, 153, 255);
-    -webkit-transition:  ease-in-out 0.5s;
-    -moz-transition:  ease-in-out 0.5s;
-    -ms-transition:  ease-in-out 0.5s;
-    -o-transition:  ease-in-out 0.5s;
-}
 
 input::-webkit-input-placeholder
 {
@@ -380,7 +326,7 @@ img {
 
 
   /* navbar */
-.btn
+.btn-nav
 {
   align-items: flex-end;
   height: 48px;

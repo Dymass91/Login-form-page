@@ -12,6 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <link rel="stylesheet" href="style.css" type="text/css" />
+
+
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
 
@@ -25,7 +27,7 @@
             <li href="">Prices</li>
             <li href="">Contact</li>
         </ul>
-        <button class="btn btn-primary">Sign in</button>
+        <button class="btn btn-nav">Sign in</button>
         <button class="navbar-toggler">
             <span></span>
         </button>
@@ -34,45 +36,65 @@
         <img class="slideshow-image" src="img/snowboard0.jpg">
         <img class="slideshow-image" src="img/snowboard1.jpeg">
     </div>
-    <!--<fieldset class="Login-form">
-        <legend> MyBoard.com </legend>
 
-        <p class="hint-text">Create your account. It's for free and it take only couple seconds.</p>
+    <div class="container">
+        <fieldset class="Login-form">
+            <legend> MyBoard.com </legend>
 
-        <form id="form" action="/" method="post" onsubmit="return ValidateForm()">
-            <input type="text" name="first_name" placeholder="First Name" onfocus="placeholder=''"
-                onblur="placeholder='First Name'" id="name">
+            <p class="hint-text">Create your account. It's for free and it take only couple seconds.</p>
+            <div class="row">
 
-            <p class="error"></p>
+                <form id="myForm" novalidate>
 
-            <input type="text" name="last_name" placeholder="Last Name" onfocus="placeholder=''"
-                onblur="placeholder='Last Name'">
+                    <div class="row">
+                        <div class="input">
 
-            <p class="error"></p>
+                            <input for="firstName" type="text" name="First Name" id="firstName"
+                                onfocusout="validateFirstName()" placeholder="First Name" onfocus="placeholder=''" />
+                            <span class="helper-text"></span>
+                        </div>
+                        <div class="input">
 
-            <input type="email" name="email" placeholder="Email" onfocus="placeholder=''" onblur="placeholder='Email'">
+                            <input for="lastName" type="text" name="Last Name" id="lastName"
+                                onfocusout="validateLastName()" placeholder="Last Name" onfocus="placeholder=''" />
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
 
-            <p class="error"></p>
+                            <input for="password" type="password" name="Password" id="password"
+                                onfocusout="validatePassword()" placeholder="Password" onfocus="placeholder=''" />
+                            <span class="helper-text"></span>
+                        </div>
+                        <div class="input">
 
-            <input type="password" placeholder="Password" onfocus="placeholder=''" onblur="placeholder='Password'"
-                id="password">
+                            <input for="confirmPassword" type="password" name="Confirm Password" id="confirmPassword"
+                                onfocusout="validateConfirmPassword()" placeholder="Confirm Password"
+                                onfocus="placeholder=''" />
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
 
-            <p class="error"></p>
+                            <input for="email" type="email" name="Email" id="email" onfocusout="validateEmail()"
+                                placeholder="Email" onfocus="placeholder=''" />
+                            <span class="helper-text"></span>
+                        </div>
+                    </div>
+                    </br>
 
-            <input type="password" placeholder="Confirm Password" onfocus="placeholder=''"
-                onblur="placeholder='Confirm Password'" id="confirm_password">
+                    <button class="btn btn-register" type="submit">
+                        Register now
+                    </button>
+                </form>
+                <div>
 
-            <p class="error"></p>
-
-            <label class="checkbox-inline"><input type="checkbox"> I accept the <a href="#">Terms of
-                    Use</a>
-                &amp; <a href="#">Privacy Policy</a></label>
-
-            <button type="submit">Register Now</button>
-
-        </form>
-    </fieldset>-->
-
+                </div>
+            </div>
+        </fieldset>
+    </div>
 
 
 

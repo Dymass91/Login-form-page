@@ -7,7 +7,6 @@ const email = document.getElementById('email');
 // Form
 const form = document.getElementById('myForm');
 // Validation colors
-const green = '#4CAF50';
 const red = '#F44336';
 
 // Handle form
@@ -42,6 +41,7 @@ form.addEventListener('submit', function (event) {
             );
             panel.appendChild(text);
             container.replaceChild(panel, loaderDiv);
+
         }, 1000);
     }
 });
@@ -117,7 +117,6 @@ function setInvalid(field, message) {
 function setValid(field) {
     field.className = 'valid';
     field.nextElementSibling.innerHTML = '';
-    //field.nextElementSibling.style.color = green;
 }
 function checkIfOnlyLetters(field) {
     if (/^[a-zA-Z ]+$/.test(field.value)) {
